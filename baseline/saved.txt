@@ -1,0 +1,83 @@
+
+#### CELL 1
+data checks passed
+
+#### CELL 2
+annualized mean returns: min 2.2%, max 18.5%
+annualized 2xSE:         min 11.2%, max 38.8%
+average pairwise correlation: 0.63
+
+#### CELL 3
+
+#### CELL 4
+toy industries: Food, Beer, Smoke, Games, Books
+Γ = 0: dual LP = 0.000468322, enumeration LP = 0.000468322, direct sort = 0.000468322, max diff = 0.0
+Γ = 1: dual LP = 0.000271304, enumeration LP = 0.000271304, direct sort = 0.000271304, max diff = 5.42e-20
+Γ = 2: dual LP = 0.000130351, enumeration LP = 0.000130351, direct sort = 0.000130351, max diff = 1.63e-19
+Γ = 3: dual LP = 1.13456e-5, enumeration LP = 1.13456e-5, direct sort = 1.13456e-5, max diff = 1.63e-19
+Γ = 4: dual LP = -4.42192e-5, enumeration LP = -4.42192e-5, direct sort = -4.42192e-5, max diff = 0.0
+Γ = 5: dual LP = -4.42192e-5, enumeration LP = -4.42192e-5, direct sort = -4.42192e-5, max diff = 0.0
+toy validation passed
+
+#### CELL 5
+full model on all 30 industries:
+Γ = 0: worst-case return 18.55%, 1 holdings; largest: BusEq 100.0%
+Γ = 5: worst-case return 8.39%, 25 holdings; largest: Food 6.0%, Hshld 5.4%, Beer 5.2%, Hlth 5.1%, Other 5.1%
+Γ = 15: worst-case return 2.17%, 30 holdings; largest: Food 4.9%, Hshld 4.5%, Beer 4.3%, Telcm 4.3%, Hlth 4.2%
+Γ = 30: worst-case return 1.28%, 1 holdings; largest: BusEq 100.0%
+
+#### CELL 6
+slope of the curve vs -z* (equal on linear stretches):
+Γ = 0: slope = -0.0002265, -z* = -0.0006851
+Γ = 1: slope = -6.624e-5, -z* = -9.391e-5
+Γ = 2: slope = -4.511e-5, -z* = -5.133e-5
+Γ = 3: slope = -3.586e-5, -z* = -4.087e-5
+Γ = 4: slope = -2.945e-5, -z* = -3.532e-5
+Γ = 5: slope = -2.653e-5, -z* = -2.653e-5
+Γ = 6: slope = -2.614e-5, -z* = -2.653e-5
+Γ = 7: slope = -2.549e-5, -z* = -2.549e-5
+Γ = 8: slope = -2.549e-5, -z* = -2.549e-5
+Γ = 9: slope = -2.549e-5, -z* = -2.549e-5
+
+#### CELL 7
+
+#### CELL 8
+
+#### CELL 9
+validation Sharpe by budget, fitted on 2015-2020 and scored on 2021-2022
+  Γ =  0:  1 holdings, Sharpe -0.2279
+  Γ =  1:  4 holdings, Sharpe -0.2741
+  Γ = 11: 26 holdings, Sharpe  0.2204
+  Γ = 13:  1 holdings, Sharpe  0.1618
+selected Γ* = 11
+
+#### CELL 10
+LP worst-case bound 4.49% at Γ* = 11, against 18.55% at Γ = 0
+  the second is just the annualized in-sample mean of BusEq, the best single industry
+holdout 2023-2025     hold  ann_ret%  ann_vol%   sharpe   maxDD%
+  robust Γ=11         26     16.16     13.71   1.1789    17.05
+  nominal Γ=0          1     38.70     26.17   1.4791    30.76
+  equal weight 1/N    30     16.56     14.74   1.1235    18.98
+
+#### CELL 11
+industries whose 2023-2025 mean fell below μ̂ - d: 1 of 30 (Beer)
+BusEq, the whole nominal book, ranked 2 of 30 on holdout mean
+leakage audit: post-2022 rows deleted, Γ* = 11, largest weight difference 0
+
+#### CELL 12
+
+#### CELL 13
+31 test windows, 1934-2026. Γ* = 0 in 9 of them, so the model bought protection in 22
+
+robust minus nominal, so a negative drawdown gap and a positive return gap favour robust
+                     robust better     median   middle half
+  maximum drawdown         19 of 22     -12.9 pp  -24.4 to  -5.4
+  annual return            11 of 22       1.7 pp   -3.8 to  15.4
+
+drawdown gap by market condition: -17.9 pp over the 12 stressed rounds, -8.7 pp over the 10 calm ones
+against equal weight instead: smaller drawdown in 7 of 22 rounds, median gap 1.0 pp
+
+#### CELL 14
+k = 1: peak 17 industries, collapses at Γ =  7 to BusEq  plateau    9.92%
+k = 2: peak 30 industries, collapses at Γ = 17 to BusEq  plateau    1.28%
+k = 3: peak 30 industries, collapses at Γ = 22 to BusEq  plateau   -7.35%

@@ -48,7 +48,9 @@ julia --project=. src/injection.jl && julia --project=. src/injection_tables.jl
 Round 1 takes about a minute and round 2 about twenty. Both scripts first check that the shared
 code reproduces every printed line of the course notebook, and stop if it does not. They also
 refuse to run with uncommitted changes in `src/` or the environment, so every `summary.json`
-names the commit that produced it.
+names the commit that produced it. The round 1 results in `results/` were produced in this repository.
+The round 2 results were produced by the same code before it was moved here; the note in the
+header of `results/injection_summary.json` says what differs.
 
 The data are from the Kenneth R. French Data Library
 (https://mba.tuck.dartmouth.edu/pages/faculty/ken.french/data_library.html). The library

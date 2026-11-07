@@ -1,0 +1,43 @@
+gate 1 pass: code 2e43b4a
+gate 2 pass: 53 baseline lines identical
+gate 3 pass: smallest top-two gap 6.115623506927951e-6
+E1 kappa = 0.5: lambda = 0.0729817, max weight difference 5.49e-08
+E1 kappa = 2.0: lambda = 0.355475, max weight difference 3.57e-06
+E1 kappa = 5.0: lambda = 1.12353, max weight difference 4.17e-06
+gate 4 pass
+gate 5 pass: all seven arms identical on truncated data
+holdout scored
+window 1934: Γ*=12 κ*=1.12 w*(RBOX)=0.767 w*(RELL)=0.0333 Γ*(DRIFT)=0
+window 1937: Γ*=3 κ*=7.3 w*(RBOX)=0 w*(RELL)=1 Γ*(DRIFT)=0
+window 1940: Γ*=14 κ*=7.3 w*(RBOX)=0 w*(RELL)=1 Γ*(DRIFT)=14
+window 1943: Γ*=7 κ*=0 w*(RBOX)=0.1 w*(RELL)=0 Γ*(DRIFT)=6
+window 1946: Γ*=2 κ*=2.67 w*(RBOX)=0 w*(RELL)=0.567 Γ*(DRIFT)=2
+window 1949: Γ*=7 κ*=0 w*(RBOX)=0.967 w*(RELL)=0 Γ*(DRIFT)=3
+window 1952: Γ*=2 κ*=3.08 w*(RBOX)=0 w*(RELL)=0.167 Γ*(DRIFT)=15
+window 1955: Γ*=7 κ*=7.3 w*(RBOX)=0.633 w*(RELL)=0 Γ*(DRIFT)=2
+window 1958: Γ*=9 κ*=7.3 w*(RBOX)=0 w*(RELL)=0.367 Γ*(DRIFT)=9
+window 1961: Γ*=0 κ*=7.3 w*(RBOX)=0 w*(RELL)=0.7 Γ*(DRIFT)=0
+window 1964: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 1967: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 1970: Γ*=8 κ*=7.3 w*(RBOX)=0.867 w*(RELL)=0.667 Γ*(DRIFT)=10
+window 1973: Γ*=3 κ*=7.3 w*(RBOX)=0 w*(RELL)=0.833 Γ*(DRIFT)=2
+window 1976: Γ*=0 κ*=0 w*(RBOX)=0.833 w*(RELL)=0.833 Γ*(DRIFT)=0
+window 1979: Γ*=11 κ*=7.3 w*(RBOX)=0.4 w*(RELL)=1 Γ*(DRIFT)=11
+window 1982: Γ*=3 κ*=6.32 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=9
+window 1985: Γ*=8 κ*=7.3 w*(RBOX)=0 w*(RELL)=1 Γ*(DRIFT)=6
+window 1988: Γ*=10 κ*=4.11 w*(RBOX)=0 w*(RELL)=0.1 Γ*(DRIFT)=1
+window 1991: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 1994: Γ*=4 κ*=7.3 w*(RBOX)=1 w*(RELL)=0.667 Γ*(DRIFT)=1
+window 1997: Γ*=5 κ*=3.56 w*(RBOX)=0 w*(RELL)=0.933 Γ*(DRIFT)=3
+window 2000: Γ*=3 κ*=7.3 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=6
+window 2003: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 2006: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 2009: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 2012: Γ*=14 κ*=4.11 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=10
+window 2015: Γ*=4 κ*=7.3 w*(RBOX)=0 w*(RELL)=1 Γ*(DRIFT)=4
+window 2018: Γ*=2 κ*=3.56 w*(RBOX)=0 w*(RELL)=0.6 Γ*(DRIFT)=3
+window 2021: Γ*=0 κ*=0 w*(RBOX)=0 w*(RELL)=0 Γ*(DRIFT)=0
+window 2024: Γ*=2 κ*=2.67 w*(RBOX)=0 w*(RELL)=0.133 Γ*(DRIFT)=2
+gate 6 pass; Clarabel ALMOST_OPTIMAL solves: 0
+wrote results/summary.json
+julia --project=. src/run.jl  42.32s user 1.46s system 97% cpu 44.985 total
